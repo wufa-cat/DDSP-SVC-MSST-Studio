@@ -1,0 +1,27 @@
+{
+  "repo": "OWNER/DDSP-SVC-6.2-Win",
+  "tag": "v6.2.0",
+  "note": "asset urls point to https://github.com/<repo>/releases/download/<tag>/<file>; regenerate with tools/make_assets.ps1",
+  "assets": [
+    {
+      "group": "runtime",
+      "name": "DDSP-SVC-6.2-Portable-cu128.zip",
+      "size": 0,
+      "sha256": "PENDING",
+      "extract": true,
+      "parts": [
+        { "name": "DDSP-SVC-6.2-Portable-cu128.zip.001", "size": 0, "url": "https://github.com/OWNER/DDSP-SVC-6.2-Win/releases/download/v6.2.0/DDSP-SVC-6.2-Portable-cu128.zip.001" }
+      ]
+    },
+    {
+      "group": "weights",
+      "name": "DDSP-SVC-6.2-Weights.zip",
+      "size": 0,
+      "sha256": "PENDING",
+      "extract": true,
+      "parts": [
+        { "name": "DDSP-SVC-6.2-Weights.zip.001", "size": 0, "url": "https://github.com/OWNER/DDSP-SVC-6.2-Win/releases/download/v6.2.0/DDSP-SVC-6.2-Weights.zip.001" }
+      ]
+    }
+  ]
+}

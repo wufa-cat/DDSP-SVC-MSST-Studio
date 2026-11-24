@@ -1,0 +1,42 @@
+# ---- python env / runtime (never commit) ----
+runtime/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+
+# ---- model weights (distributed via Release assets, see tools/fetch_release.py) ----
+pretrain/**/*.pt
+pretrain/**/*.ckpt
+pretrain/**/model
+models/*/
+!models/.gitkeep
+MSST/pretrain/
+EXPERIMENTS/
+
+# ---- caches ----
+cache/*
+!cache/.gitkeep
+downloads/
+*.npy
+*.npz
+*.log
+
+# ---- user data / outputs ----
+raw/*
+!raw/.gitkeep
+results/*
+!results/*/
+results/**/_tmp/*
+data/train/audio/
+data/val/audio/
+exp/*/
+!exp/.gitkeep
+train_webui.log
+
+# ---- os / editor ----
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
