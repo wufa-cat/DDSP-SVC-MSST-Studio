@@ -53,8 +53,16 @@
 1. 前往 [Releases v6.2.0](https://github.com/wufa-cat/DDSP-SVC-MSST-Studio/releases/tag/v6.2.0) 下载最新整合包：
    - `DDSP-SVC-6.2-Portable-cu128.zip.001 ~ .003` — 运行环境 + 代码
    - `DDSP-SVC-6.2-Weights.zip.001 ~ .002` — 模型权重
-2. 把 5 个分卷放到同一个文件夹，双击 `tools\merge_volumes.bat` 合并，再用 7-Zip / WinRAR 解压到**不含中文和空格**的路径（例如 `C:\DDSP-SVC-6.2-Win`）。
-   （装了 Python 的话也可以一条命令搞定：`python tools\fetch_release.py --only all`）
+2. 把 5 个分卷和 release 里的 `merge_volumes.bat` 放在同一个文件夹，双击 `merge_volumes.bat` 合并出两个 zip；
+   再用 7-Zip / WinRAR 解压到**不含中文和空格**的路径（例如 `C:\DDSP-SVC-6.2-Win`）。
+   不想用脚本就在该文件夹的地址栏输入 `cmd`，跑这两行：
+
+   ```bat
+   copy /b DDSP-SVC-6.2-Portable-cu128.zip.001+DDSP-SVC-6.2-Portable-cu128.zip.002+DDSP-SVC-6.2-Portable-cu128.zip.003 DDSP-SVC-6.2-Portable-cu128.zip
+   copy /b DDSP-SVC-6.2-Weights.zip.001+DDSP-SVC-6.2-Weights.zip.002 DDSP-SVC-6.2-Weights.zip
+   ```
+
+   已经装过 Python、或用仓库方式部署的话，也可以一条命令自动下载+校验+合并+解压：`python tools\fetch_release.py --only all`
 3. 双击根目录下的 `start_windows.bat`（等同于 `start.bat`）启动服务：
    - **WebUI 主界面**：`http://127.0.0.1:7860`
    - **TensorBoard 训练监控**：`http://127.0.0.1:6006`
