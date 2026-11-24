@@ -198,12 +198,12 @@ powershell -ExecutionPolicy Bypass -File tools\create_repo.ps1 -Repo "<owner>/<r
 
 本仓库是部署整合，算法与模型来自上游：
 
-- [DDSP-SVC](https://github.com/yxlllc/DDSP-SVC)（Apache-2.0）— 歌声转换、RectifiedFlow、WebUI 原型
-- [Music-Source-Separation-Training](https://github.com/ZFTurbo/Music-Source-Separation-Training) — 音乐分离
+- [DDSP-SVC](https://github.com/yxlllc/DDSP-SVC)（MIT, © yxlllc）— 歌声转换、RectifiedFlow、WebUI 原型
+- [Music-Source-Separation-Training](https://github.com/ZFTurbo/Music-Source-Separation-Training)（MIT, © Roman Solovyev）— 音乐分离
 - [ContentVec](https://github.com/auspicious3000/contentvec) / HuBERT — 语义编码器
 - [RMVPE](https://github.com/Dream-High/RMVPE) — 音高提取
 - OpenVPI `pc_nsf_hifigan` — 声码器
 - 自带测试模型「薇欧拉」为本人训练，仅供部署验证与试听
 
-各权重目录保留了上游的 `NOTICE.txt` / `STATEMENTS.txt`，一并遵守。本仓库新增脚本与文档为 Apache-2.0，见 [LICENSE](LICENSE)。
+各权重目录保留了上游的 `NOTICE.txt` / `STATEMENTS.txt`，一并遵守。本仓库新增脚本与文档同样为 MIT，见 [LICENSE](LICENSE)。
 上游原始说明：[README_upstream.md](README_upstream.md) / [cn_README.md](cn_README.md)。
