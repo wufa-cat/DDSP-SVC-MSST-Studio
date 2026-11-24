@@ -52,7 +52,12 @@ if not exist "%MC%\python.exe" ( echo [FAIL] Miniconda install failed & goto :fa
 
 :mkvenv
 echo [2/7] creating python 3.10 env at runtime\ ...
-call "%MC%\condabin\conda.bat" create -p "%ROOT%\runtime" python=3.10 -y >> "%LOG%" 2>&1
+rem china mirror first (repo.anaconda.com is often unreachable), fall back to defaults
+call "%MC%\condabin\conda.bat" create -p "%ROOT%\runtime" -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main -c https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/r --override-channels python=3.10 -y >> "%LOG%" 2>&1
+if not exist "%PY%" (
+  echo       mirror failed, retry with default channels ...
+  call "%MC%\condabin\conda.bat" create -p "%ROOT%\runtime" python=3.10 -y >> "%LOG%" 2>&1
+)
 if not exist "%PY%" ( echo [FAIL] conda create failed, see %LOG% & goto :fail )
 
 :installdeps

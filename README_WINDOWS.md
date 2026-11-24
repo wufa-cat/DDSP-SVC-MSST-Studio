@@ -97,3 +97,14 @@ exp\                训练实验目录（TensorBoard 读这里）
 results\            推理输出
 start.bat / start_all.bat / start_tensorboard.bat
 ```
+
+---
+
+## 文档索引
+
+| 文件 | 内容 |
+|---|---|
+| `docs/DEPLOY_WINDOWS.md` | 三条部署路径、显卡适配表、常见问题 |
+| `docs/UPLOAD.md` | 维护者：推仓库 + 上传 Release 分卷 + 回填清单 |
+| `docs/VALIDATION.md` | 实测报告（本机 CPU 全链路数据） |
+| `docs/RELEASE.md` | 打包脚本用法 |
