@@ -1,0 +1,31 @@
+DDSP-SVC 6.2 Win 部署包 —— 使用说明
+====================================
+
+【最快的用法】
+1. 解压到纯英文路径，例如 D:\DDSP-SVC-6.2
+   （权重包和便携包都解压到同一个目录，覆盖合并）
+2. 双击 start.bat
+3. 浏览器打开 http://127.0.0.1:7860
+
+【两个端口】
+7860  WebUI 主界面（日常用这个）
+6006  TensorBoard（训练时看曲线、试听 checkpoint）
+      → 双击 start_all.bat 可同时启动两个
+      → 或单独双击 start_tensorboard.bat
+
+【显卡】
+RTX 30 / 40 / 50 系都能直接用（内置 torch 2.7.1+cu128，覆盖 sm_86/89/90/120）
+- 50 系要求 NVIDIA 驱动 >= 570
+- 30 / 40 系建议驱动 >= 550
+- 没有显卡或驱动太旧：会自动用 CPU 跑，能出结果，只是慢
+  （50 系跑 6 秒音频约 100 秒；CPU 上会明显更久）
+
+【自检】
+双击 setup\verify_env.py 所属目录下执行：
+  runtime\python.exe setup\verify_env.py
+会打印：torch 版本、显卡型号/算力/显存、依赖是否齐全、ffmpeg 是否可用、权重是否就位
+
+【注意】
+- 必须用 start.bat 启动（它会设置 PATH 里的 ffmpeg 和各缓存目录）
+- 路径别带中文，别放桌面
+- 报错先看 setup\install.log、以及窗口里的红色 traceback

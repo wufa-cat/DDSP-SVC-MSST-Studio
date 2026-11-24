@@ -90,6 +90,9 @@ if exist "%ROOT%\setup\vendor\fairseq-0.12.2.tar.gz" (
   echo [WARN] setup\vendor\fairseq-0.12.2.tar.gz missing - contentvec encoder will not load
 )
 
+echo [7b/7] applying runtime compatibility patches ...
+"%PY%" "%ROOT%\tools\patch_runtime.py" >> "%LOG%" 2>&1
+
 echo.
 echo ============================================================
 echo  verifying environment ...

@@ -5,6 +5,7 @@ param(
   [string]$Repo = "OWNER/DDSP-SVC-6.2-Win",
   [string]$Tag  = "v6.2.0",
   [int]$VolumeMB = 1900,
+  [int]$Level = 1,
   [string]$OutDir = "dist",
   [switch]$SkipPortable,
   [switch]$SkipWeights
@@ -80,7 +81,7 @@ function New-VolumeZip([string]$srcDir, [string]$zipName) {
   Get-ChildItem -Path $Dist -Filter "$zipName.*" -ErrorAction SilentlyContinue | Remove-Item -Force
   if (Test-Path $target) { Remove-Item $target -Force }
   Push-Location $srcDir
-  & $SevenZip a -tzip -mx=5 "-v${VolumeMB}m" $target * | Out-Null
+  & $SevenZip a -tzip "-mx=$Level" "-v${VolumeMB}m" $target * | Out-Null
   Pop-Location
   Get-ChildItem -Path $Dist -Filter "$zipName.*" | Sort-Object Name
 }

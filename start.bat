@@ -22,6 +22,7 @@ set "MPLCONFIGDIR=%ROOT%\cache\mpl"
 set "GRADIO_ANALYTICS_ENABLED=False"
 set "GRADIO_TEMP_DIR=%ROOT%\cache\gradio"
 if not exist "%ROOT%\cache" mkdir "%ROOT%\cache"
+if not exist "%ROOT%\runtime\.patched" "%ROOT%\runtime\python.exe" "%ROOT%\tools\patch_runtime.py"
 
 echo ============================================================
 echo  DDSP-SVC 6.2 WebUI   -^>  http://127.0.0.1:7860
