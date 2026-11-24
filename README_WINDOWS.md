@@ -25,9 +25,9 @@
 
 ### A. 便携包（推荐，解压即用，不联网）
 
-1. 到 Releases 下载：
-   - `DDSP-SVC-6.2-Portable-cu128.zip.001~00N`（运行环境 + 代码）
-   - `DDSP-SVC-6.2-Weights.zip.001~00N`（权重）
+1. 到 Releases 下载（GitHub 单附件上限 2G，所以分卷）：
+   - `DDSP-SVC-6.2-Portable-cu128.zip.001~003` — 运行环境 + 代码，约 **4.05 G**
+   - `DDSP-SVC-6.2-Weights.zip.001~002` — 权重，约 **3.25 G**
 2. 合并分卷：`copy /b 分卷1+分卷2+... 目标.zip`，或用脚本自动搞定：
    ```bat
    python tools\fetch_release.py --only all

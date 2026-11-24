@@ -14,6 +14,12 @@ models/*/
 MSST/pretrain/
 EXPERIMENTS/
 
+# ---- release build output ----
+dist/
+*.zip.00*
+*.7z.00*
+*.tmp
+
 # ---- caches ----
 cache/*
 !cache/.gitkeep

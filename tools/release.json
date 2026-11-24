@@ -1,26 +1,51 @@
 {
-  "repo": "OWNER/DDSP-SVC-6.2-Win",
+  "repo": "YG/DDSP-SVC-6.2-Win",
   "tag": "v6.2.0",
-  "note": "asset urls point to https://github.com/<repo>/releases/download/<tag>/<file>; regenerate with tools/make_assets.ps1",
   "assets": [
     {
       "group": "runtime",
       "name": "DDSP-SVC-6.2-Portable-cu128.zip",
-      "size": 0,
-      "sha256": "PENDING",
+      "size": 4246163254,
       "extract": true,
       "parts": [
-        { "name": "DDSP-SVC-6.2-Portable-cu128.zip.001", "size": 0, "url": "https://github.com/OWNER/DDSP-SVC-6.2-Win/releases/download/v6.2.0/DDSP-SVC-6.2-Portable-cu128.zip.001" }
+        {
+          "name": "DDSP-SVC-6.2-Portable-cu128.zip.001",
+          "size": 1992294400,
+          "sha256": "c3244d58bf167b5d60c9cefbb6749b9a21dd57c698c203b379ae3bc77f0674d4",
+          "url": "https://github.com/YG/DDSP-SVC-6.2-Win/releases/download/v6.2.0/DDSP-SVC-6.2-Portable-cu128.zip.001"
+        },
+        {
+          "name": "DDSP-SVC-6.2-Portable-cu128.zip.002",
+          "size": 1992294400,
+          "sha256": "1127a458b4c2157a17f059f7d8592737bf7b43587832b157ba74b30320d1e334",
+          "url": "https://github.com/YG/DDSP-SVC-6.2-Win/releases/download/v6.2.0/DDSP-SVC-6.2-Portable-cu128.zip.002"
+        },
+        {
+          "name": "DDSP-SVC-6.2-Portable-cu128.zip.003",
+          "size": 261574454,
+          "sha256": "fc78e4e8a84b20115d2d7b9894f4ad05108eeab34aff2c1fdd5262127152dfa8",
+          "url": "https://github.com/YG/DDSP-SVC-6.2-Win/releases/download/v6.2.0/DDSP-SVC-6.2-Portable-cu128.zip.003"
+        }
       ]
     },
     {
       "group": "weights",
       "name": "DDSP-SVC-6.2-Weights.zip",
-      "size": 0,
-      "sha256": "PENDING",
+      "size": 3408140970,
       "extract": true,
       "parts": [
-        { "name": "DDSP-SVC-6.2-Weights.zip.001", "size": 0, "url": "https://github.com/OWNER/DDSP-SVC-6.2-Win/releases/download/v6.2.0/DDSP-SVC-6.2-Weights.zip.001" }
+        {
+          "name": "DDSP-SVC-6.2-Weights.zip.001",
+          "size": 1992294400,
+          "sha256": "2b9395bf40e8a49dd5f71725595fce431ab31f6118929b44e6caac0daeca9887",
+          "url": "https://github.com/YG/DDSP-SVC-6.2-Win/releases/download/v6.2.0/DDSP-SVC-6.2-Weights.zip.001"
+        },
+        {
+          "name": "DDSP-SVC-6.2-Weights.zip.002",
+          "size": 1415846570,
+          "sha256": "50891f5aa552b1911a10bba8cef2bd0963dae8b26fe428160ed02b1f5a4f0fae",
+          "url": "https://github.com/YG/DDSP-SVC-6.2-Win/releases/download/v6.2.0/DDSP-SVC-6.2-Weights.zip.002"
+        }
       ]
     }
   ]
