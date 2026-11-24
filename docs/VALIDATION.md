@@ -92,3 +92,15 @@ runtime\python.exe main_reflow.py ... -d cpu
 - 真实 NVIDIA 显卡上的 CUDA kernel 执行（本机无卡）。代码路径为 `torch.cuda.is_available()` 分支，
   与 CPU 分支共用同一套模型代码；cu128 轮子已包含 sm_86/89/90/120 内核。
 - MSST 音乐分离的完整跑通（需要更长音频与更多显存/内存；权重与 ffmpeg 已就位，模块 import 通过）。
+
+## 7. 补充验证（第二次完整回归）
+
+| 项 | 结果 |
+|---|---|
+| `setup\install_env.bat` 在全新目录 `C:\itest` 从零安装 | **RESULT: PASS**（torch 2.7.1+**cpu** 分支，因为测试机无显卡；conda 走清华镜像） |
+| 重打包后的便携包解压到全新目录 `C:\portest2` | `verify_env.py` → **RESULT: PASS** |
+| 从 `C:\portest2` 启动 WebUI | `GET /` = 200，监听进程 `C:\portest2\runtime\python.exe` |
+
+安装器过程中修复的两处真实问题：
+1. `repo.anaconda.com` 在部分国内网络不可达 → 加清华 conda 镜像并保留官方源回退。
+2. `librosa==0.10.2.post1` 与 `torchcrepe/torch_audiomentations` 冲突 → 钉 `librosa==0.9.2`（与实测环境一致）。
