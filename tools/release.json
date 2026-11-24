@@ -5,25 +5,25 @@
     {
       "group": "runtime",
       "name": "DDSP-SVC-6.2-Portable-cu128.zip",
-      "size": 4246163254,
+      "size": 4246167877,
       "extract": true,
       "parts": [
         {
           "name": "DDSP-SVC-6.2-Portable-cu128.zip.001",
           "size": 1992294400,
-          "sha256": "c3244d58bf167b5d60c9cefbb6749b9a21dd57c698c203b379ae3bc77f0674d4",
+          "sha256": "49f09f7f574373c950f542f496ec45746e4d684f2864714dadb0dc58e8f846af",
           "url": "https://github.com/YG/DDSP-SVC-6.2-Win/releases/download/v6.2.0/DDSP-SVC-6.2-Portable-cu128.zip.001"
         },
         {
           "name": "DDSP-SVC-6.2-Portable-cu128.zip.002",
           "size": 1992294400,
-          "sha256": "1127a458b4c2157a17f059f7d8592737bf7b43587832b157ba74b30320d1e334",
+          "sha256": "c564277b33bdfb18df6d567c9ed2f09676345e3354ea1d6dbba480a3be19ca92",
           "url": "https://github.com/YG/DDSP-SVC-6.2-Win/releases/download/v6.2.0/DDSP-SVC-6.2-Portable-cu128.zip.002"
         },
         {
           "name": "DDSP-SVC-6.2-Portable-cu128.zip.003",
-          "size": 261574454,
-          "sha256": "fc78e4e8a84b20115d2d7b9894f4ad05108eeab34aff2c1fdd5262127152dfa8",
+          "size": 261579077,
+          "sha256": "40a96cf90e841144e15f30e6184c39acade06f14ccfcd99caa81ec4daa29f678",
           "url": "https://github.com/YG/DDSP-SVC-6.2-Win/releases/download/v6.2.0/DDSP-SVC-6.2-Portable-cu128.zip.003"
         }
       ]
