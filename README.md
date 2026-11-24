@@ -87,15 +87,14 @@ Releases 里下载 5 个分卷（GitHub 单附件上限 2G，所以切开）：
 - `DDSP-SVC-6.2-Portable-cu128.zip.001~003` — 运行环境 + 代码，4.05 G
 - `DDSP-SVC-6.2-Weights.zip.001~002` — 权重，3.25 G
 
-```bat
-python tools\fetch_release.py --only all      :: 自动下载、校验 sha256、合并、解压
-```
-
-或者手动合并后解压：
+有 Python（或已解压过一次）时，一条命令搞定下载、校验和、合并、解压：
 
 ```bat
-copy /b DDSP-SVC-6.2-Portable-cu128.zip.001+DDSP-SVC-6.2-Portable-cu128.zip.002+DDSP-SVC-6.2-Portable-cu128.zip.003 DDSP-SVC-6.2-Portable-cu128.zip
+python tools\fetch_release.py --only all
 ```
+
+什么都没有也能装：把 5 个分卷和 `tools\merge_volumes.bat` 一起下载到同一目录，双击 `merge_volumes.bat`
+（纯 cmd 的 `copy /b`，不需要装 Python），再用 7-Zip / WinRAR 解压两个 zip 到当前目录。
 
 解压到纯英文路径（`D:\DDSP-SVC-6.2` 这种），双击 `start.bat`。
 
