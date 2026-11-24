@@ -1,5 +1,5 @@
 {
-  "repo": "wufa-cat/DDSP-SVC-6.2-Win",
+  "repo": "wufa-cat/DDSP-SVC-MSST-Studio",
   "tag": "v6.2.0",
   "assets": [
     {
@@ -12,19 +12,19 @@
           "name": "DDSP-SVC-6.2-Portable-cu128.zip.001",
           "size": 1992294400,
           "sha256": "49f09f7f574373c950f542f496ec45746e4d684f2864714dadb0dc58e8f846af",
-          "url": "https://github.com/wufa-cat/DDSP-SVC-6.2-Win/releases/download/v6.2.0/DDSP-SVC-6.2-Portable-cu128.zip.001"
+          "url": "https://github.com/wufa-cat/DDSP-SVC-MSST-Studio/releases/download/v6.2.0/DDSP-SVC-6.2-Portable-cu128.zip.001"
         },
         {
           "name": "DDSP-SVC-6.2-Portable-cu128.zip.002",
           "size": 1992294400,
           "sha256": "c564277b33bdfb18df6d567c9ed2f09676345e3354ea1d6dbba480a3be19ca92",
-          "url": "https://github.com/wufa-cat/DDSP-SVC-6.2-Win/releases/download/v6.2.0/DDSP-SVC-6.2-Portable-cu128.zip.002"
+          "url": "https://github.com/wufa-cat/DDSP-SVC-MSST-Studio/releases/download/v6.2.0/DDSP-SVC-6.2-Portable-cu128.zip.002"
         },
         {
           "name": "DDSP-SVC-6.2-Portable-cu128.zip.003",
           "size": 261579077,
           "sha256": "40a96cf90e841144e15f30e6184c39acade06f14ccfcd99caa81ec4daa29f678",
-          "url": "https://github.com/wufa-cat/DDSP-SVC-6.2-Win/releases/download/v6.2.0/DDSP-SVC-6.2-Portable-cu128.zip.003"
+          "url": "https://github.com/wufa-cat/DDSP-SVC-MSST-Studio/releases/download/v6.2.0/DDSP-SVC-6.2-Portable-cu128.zip.003"
         }
       ]
     },
@@ -38,13 +38,13 @@
           "name": "DDSP-SVC-6.2-Weights.zip.001",
           "size": 1992294400,
           "sha256": "2b9395bf40e8a49dd5f71725595fce431ab31f6118929b44e6caac0daeca9887",
-          "url": "https://github.com/wufa-cat/DDSP-SVC-6.2-Win/releases/download/v6.2.0/DDSP-SVC-6.2-Weights.zip.001"
+          "url": "https://github.com/wufa-cat/DDSP-SVC-MSST-Studio/releases/download/v6.2.0/DDSP-SVC-6.2-Weights.zip.001"
         },
         {
           "name": "DDSP-SVC-6.2-Weights.zip.002",
           "size": 1415846570,
           "sha256": "50891f5aa552b1911a10bba8cef2bd0963dae8b26fe428160ed02b1f5a4f0fae",
-          "url": "https://github.com/wufa-cat/DDSP-SVC-6.2-Win/releases/download/v6.2.0/DDSP-SVC-6.2-Weights.zip.002"
+          "url": "https://github.com/wufa-cat/DDSP-SVC-MSST-Studio/releases/download/v6.2.0/DDSP-SVC-6.2-Weights.zip.002"
         }
       ]
     }
